@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<div class="grid-row">
+		<div class="column-two-thirds">
+
+			<h2 class="heading-large">Country register</h2>
+			<p>The country register is a list of British English-language names and descriptive terms for countries. </p>
+			<p><a class="button button-start" href="#" role="button">View register</a></p>
+			<p>You can also <a href="">download a copy</a> of the register.</p>
+			<p>The country register contains 199 records and includes the following fields:</p>
+			<ul class="list list-bullet">
+				<li>country (the country’s 2 letter ISO 3166-2 code)</li>
+				<li>name (the commonly used name of the country)</li>
+				<li>official-name (the country’s official name)</li>
+				<li>citizen-names (the name of the country’s citizens)</li>
+				<li>start-date (when the country was first recognised)</li>
+				<li>end-date (when the country was dissolved or changed its name)</li>
+
+			</ul>
+
+			<h4 class="heading-medium">Using this register</h4>
+
+			<p>Download a copy of this register. You’ll need to regularly update it to make sure you have the most current version of the data.</p>
+
+			<p>If you’re building a service, you can use this data to create elements for forms.</p> 
+
+			<p>You might need to combine data from this register with data from another source (such as the territory register) to do this. </p>
+
+			<p>If you do, you must make it clear the element has been built using more than just country data. For example, name the element ‘Choose location’ instead of ‘Choose country’.</p>
+
+    	</div>
+
+
+    	<div class="column-third">
+   			<div class="related-container">
+    			<aside class="govuk-related-items" role="complementary" style="margin-top: 50px">
+	      			<div class="inner group related-subsection">        
+	      				<h3 class="heading-medium">About this register</h3>
+	        			<h4 class="heading-small">Custodian</h4>
+	        			<p>Tony Worron</p>
+	    				<h4 class="heading-small">Managed by</h4>
+	    				<p><img src="/public/images/fco_logo.png"></p>
+	    				<h4 class="heading-small">Last updated</h4>
+	    				<ul class="list">
+	    					<li>5 April 2016</li>
+	    					<li><a href="">View recent updates</a></li>
+	    				</ul>
+	    				<h4 class="heading-small">Links to</h4>
+	    				<p><a href="">Another register</a></p>
+	    				<h4 class="heading-small">Linked from</h4>
+    					<ul class="list">
+    						<li><a href="">Certain register</a></li>
+    						<li><a href="">Other certain register</a></li>
+    						<li><a href="">Another register</a></li>
+    					</ul>
+	    				<h4 class="heading-small">Similar registers</h4>
+	    				<p><a href="">Territory register</a></p>
+	    			</div>
+	    			<div class="inner group related-subsection">        
+	    				<h3 class="heading-medium">Elsewhere on GOV.UK</h3>
+	    				<ul class="list">
+	    					<li><a href="">Introducing registers</a></li>
+	    					<li><a href="">Register history</a></li>
+	    					<li><a href="">Guidance for using registers</a></li>
+	    					<li><a href="">Technical specification</a></li>
+	    				</ul>
+      				</div>
+      			</aside>
+
+  			</div>
+
+    	</div>
+    </div>
+</main>
+
+{% endblock %}
+
+
