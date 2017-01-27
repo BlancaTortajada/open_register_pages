@@ -28,3 +28,110 @@ $path: "/public/images/";
 }
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// html, body, main, button, input, table, table td, table th, .heading-large, .heading-medium, .heading-small, .phase-banner p, .breadcrumbs li {
+//   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+// }
+
+// #global-header, #global-header .header-wrapper {
+//   background-color: #2b8cc4;
+// }
+
+#global-header .header-proposition #proposition-name {
+  font-weight: 400;
+  text-align: left;
+}
+
+aside {
+  margin-top: 10px;
+}
+
+dl dd {
+  float: left;
+  margin: 0;
+  padding-bottom: 1em;
+  width: 65%;
+}
+
+dl dt {
+  clear: left;
+  float: left;
+  font-weight: bold;
+  padding-bottom: 1em;
+  width: 35%;
+}
+
+img.logo {
+  max-width: 50%;
+}
+
+img.logo#table-logo {
+  float: right;
+  margin-top: 45px;
+}
+
+p.legend {
+  font-size: 16px;
+  line-height: 36px;
+  text-align: right;
+}
+
+.grid-row.table-view {
+  padding-top: 40px;
+}
+
+.column-full#table-column {
+  position: relative;
+}
+
+.table-wrapper.scroll { 
+  border-right: 30px solid #DEE0E2;
+  overflow-x: scroll;
+  margin-bottom: 25px;
+}
+
+.table-arrow#right {
+  position: absolute;
+  top: 36px;
+  right: 23px;
+  height: 22px;
+  width: 12px;
+  z-index: 999;
+}
+
+dl {
+  overflow: hidden;
+}
+
+table td {
+  padding: 15px 40px 15px 0;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+thead tr td {
+  text-decoration: underline;
+  vertical-align: top;
+  color: #005ea5;
+  border-top: 2px solid #dee0e2;
+}
+
+table tr td strong {
+  font-weight: 700;
+}
+
+.sorting {
+  font-weight: 700;
+}
+
+.sorting:after {
+  content: "";
+  width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 8px solid #005ea5;
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 16px;
+}

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block page_title %}
-  GOV.UK prototype kit
+  Open Registers
 {% endblock %}
 
 {% block content %}
@@ -16,48 +16,76 @@
 	<div class="grid-row">
 		<div class="column-two-thirds">
 
-			<h2 class="heading-large">Country register</h2>
-			<p>The country register is a list of British English-language names and descriptive terms for countries. </p>
-			<p><a class="button" href="#" role="button">View register</a></p>
-			<p>You can also <a href="">download a copy</a> of the register.</p>
-			<p>The country register contains 199 records and includes the following fields:</p>
-			<ul class="list list-bullet">
-				<li>country (the country’s 2 letter ISO 3166-2 code)</li>
-				<li>name (the commonly used name of the country)</li>
-				<li>official-name (the country’s official name)</li>
-				<li>citizen-names (the name of the country’s citizens)</li>
-				<li>start-date (when the country was first recognised)</li>
-				<li>end-date (when the country was dissolved or changed its name)</li>
-
-			</ul>
+			<h2 class="heading-large">School eng register</h2>
+			<p>Schools in England legally registered to provide full time education to pupils of compulsory school age</p>
+			<p><a class="button" href="/table
+			.html" role="button">View register</a></p>
+			<p>You can also <a href="https://country.beta.openregister.org/download">download a copy</a> of the register.</p>
+			<p>The School eng register contains 881 records and includes the following fields:</p>
+			<dl>
+				<dt>School-eng:</dt>
+				<dd>School in England legally registered to provide full time education to pupils of compulsory school age.</dd>
+				<dt>Name:</dt>
+				<dd>Name of field</dd>
+				<dt>Address:</dt>
+				<dd>An address in the UK.</dd>
+				<dt>School-authority-eng:</dt>
+				<dd>School authority organisation.</dd>
+				<dt>Minimum-age:</dt>
+				<dd>Minimum age.</dd>
+				<dt>Maximum-age:</dt>
+				<dd>Maximum age.</dd>
+				<dt>School-capacity:</dt>
+				<dd>A school’s capacity of pupil places.</dd>
+				<dt>Religious-characters:</dt>
+				<dd>A list of religion or subgroup within a religion operating under a common name, tradition, and identity.</dd>
+				<dt>Religious-ethos:</dt>
+				<dd>A list of religion or subgroup within a religion operating under a common name, tradition, and identity.</dd>
+				<dt>Dioceses:</dt>
+				<dd>A list of districts under the pastoral care of a bishop in the Christian Church.</dd>
+				<dt>Organisation:</dt>
+				<dd>A legal entity.</dd>
+				<dt>School-phases:</dt>
+				<dd>A list of phases of a school.</dd>
+				<dt>School-admissions-policy:</dt>
+				<dd>The admissions policy for a school.</dd>
+				<dt>School-gender:</dt>
+				<dd>The gender of a school.</dd>
+				<dt>School-tags:</dt>
+				<dd>Set of tags which may be applied to a school.</dd>
+				<dt>Headteacher:</dt>
+				<dd>The name of the headteacher or principal for a school or educational establishment.</dd>
+				<dt>Start-date:</dt>
+				<dd>Start datetime for the applicability of a register entry.</dd>
+				<dt>End-date:</dt>
+				<dd>End datetime for the applicability of a register entry.</dd>
+			</dl>
 
 			<h4 class="heading-medium">Using this register</h4>
 
-			<p>Download a copy of this register. You’ll need to regularly update it to make sure you have the most current version of the data.</p>
-
-			<p>If you’re building a service, you can use this data to create elements for forms.</p> 
-
-			<p>You might need to combine data from this register with data from another source (such as the territory register) to do this. </p>
-
-			<p>If you do, you must make it clear the element has been built using more than just country data. For example, name the element ‘Choose location’ instead of ‘Choose country’.</p>
+			<p>Download a copy of this register. You'll need to regularly update it to make sure you have the most current version of the data.</p>
+			<p>If you're building a service, you can use this data to create elements for forms.</p>
+			<p>You might need to combine data from this register with data from another source to do this.</p>
 
     	</div>
 
 
     	<div class="column-third">
    			<div class="related-container">
-    			<aside class="govuk-related-items" role="complementary" style="margin-top: 50px">
+    			<aside>
 	      			<div class="inner group related-subsection">        
 	      				<h3 class="heading-medium">About this register</h3>
 	        			<h4 class="heading-small">Custodian</h4>
-	        			<p>Tony Worron</p>
+	        			<p>Andrew Thomson</p>
 	    				<h4 class="heading-small">Managed by</h4>
-	    				<p><img src="/public/images/fco_logo.png"></p>
+	    				<p><img class="logo" src="/public/images/department_for_education.png"></p>
 	    				<h4 class="heading-small">Last updated</h4>
 	    				<ul class="list">
 	    					<li>5 April 2016</li>
 	    					<li><a href="">View recent updates</a></li>
 	    				</ul>
+	    				<h4 class="heading-small">What registers are</h4>
+	    				<p><a href="">Find out about registers</a></p>
 	    				<h4 class="heading-small">Links to</h4>
 	    				<p><a href="">Another register</a></p>
 	    				<h4 class="heading-small">Linked from</h4>
