@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Open Registers
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+	<div class="phase-banner">
+		<p>
+		<strong class="phase-tag">BETA</strong>
+		<span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+		</p>
+	</div>
+	<div class="breadcrumbs">
+		<ol>
+			<li><a href="https://www.gov.uk/service-toolkit">Components</a></li>
+			<li><a href="https://registers.cloudapps.digital/">Registers</a></li>
+			<li>Status</li>
+		</ol>
+	</div>
+	<div class="grid-row">
+		<div class="column-two-thirds">
+			<h2 class="heading-large">Register status</h2>
+		</div>
+	</div>
+	</div>
+	<div class="grid-row data-viz">
+		<div class="column-one-fifth">
+			<div class="data live">
+				<span class="data-item bold-xxlarge">0</span>
+				<span class="data-item bold-xsmall">Live registers</span>
+			</div>
+		</div>
+		<div class="column-one-fifth">
+			<div class="data beta">
+				<span class="data-item bold-xxlarge">4</span>
+				<span class="data-item bold-xsmall">Registers in beta</span>
+			</div>
+		</div>
+		<div class="column-one-fifth">
+			<div class="data alpha">
+				<span class="data-item bold-xxlarge">4</span>
+				<span class="data-item bold-xsmall">Registers in alpha</span>
+			</div>
+		</div>
+		<div class="column-one-fifth">
+			<div class="data discovery">
+				<span class="data-item bold-xxlarge">5</span>
+				<span class="data-item bold-xsmall">Registers in discovery</span>
+			</div>
+		</div>
+		<div class="column-one-fifth">
+			<div class="data backlog">
+				<span class="data-item bold-xxlarge">0</span>
+				<span class="data-item bold-xsmall">Registers in backlog</span>
+			</div>
+		</div>
+	</div>
+	<div class="grid-row">
+		<div class="column-full">
+			<table id="status">
+				<tbody>
+					<thead>
+						<tr>
+							<td>Register</td>
+							<td class="sorting">Status</td>
+							<td>Managed by</td>
+							<td></td>
+						</tr>		
+					</thead>
+					<tr>
+						<td>
+							<h3 class="heading-small">Country</h3>
+							<p>British English-language names and descriptive terms for countries</p>
+						</td>
+						<td class="status beta"><strong>Beta</strong></td>
+						<td class="status-logo"><img src="/public/images/department_for_education.png"></td>
+						<td class="links">
+							<a href="">View Register</a>
+							<a href="">View History</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 class="heading-small">Territory</h3>
+							<p>British English-language names and descriptive terms for political, administrative and geographical entities that aren’t recognised as countries by the UK</p>
+						</td>
+						<td class="status beta"><strong>Beta</strong></td>
+						<td class="status-logo"><img src="/public/images/department_for_education.png"></td>
+						<td class="links">
+							<a href="">View Register</a>
+							<a href="">View History</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 class="heading-small">Local authority eng</h3>
+							<p>Local Authorities in England</p>
+						</td>
+						<td class="status beta"><strong>Beta</strong></td>
+						<td class="status-logo"><img src="/public/images/department_for_education.png"></td>
+						<td class="links">
+							<a href="">View Register</a>
+							<a href="">View History</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 class="heading-small">Local authority type</h3>
+							<p>Types of local government organisations in the United Kingdom</p>
+						</td>
+						<td class="status discovery"><strong>Discovery</strong></td>
+						<td class="status-logo"><img src="/public/images/department_for_education.png"></td>
+						<td class="links">
+							<a href="">View Register</a>
+							<a href="">View History</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</main>
+
+{% endblock %}
+
+

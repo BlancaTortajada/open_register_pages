@@ -70,6 +70,15 @@ img.logo#table-logo {
   margin-top: 45px;
 }
 
+td.status-logo {
+  vertical-align: middle;
+}
+
+td.status-logo img {
+  display: block;
+  max-width: 100px;
+}
+
 p.legend {
   font-size: 16px;
   line-height: 36px;
@@ -107,7 +116,29 @@ table td {
   padding: 15px 40px 15px 0;
   font-size: 16px;
   white-space: nowrap;
+  vertical-align: top;
 }
+
+table#status td {
+  white-space: normal;
+  word-wrap: break-word;
+  max-width: 400px;
+  vertical-align: middle;
+}
+
+table#status td.links{
+  padding-right: 0;
+}
+
+table#status td.links a{
+  text-align: right;
+  display: inline-block;
+}
+
+table#status td.links a:first-child{
+  margin-right: 20px;
+}
+
 
 thead tr td {
   text-decoration: underline;
@@ -134,4 +165,77 @@ table tr td strong {
   display: inline-block;
   margin-left: 5px;
   line-height: 16px;
+}
+
+.status:before {
+  content: '';
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-radius: 100px;
+  margin-right: 5px;
+}
+
+.status.live:before {
+  border: 6px solid #85994b;
+}
+
+.status.beta:before {
+  border: 6px solid #f47738;
+}
+
+.status.alpha:before {
+  border: 6px solid #d53880;
+}
+
+.status.discovery:before {
+  border: 6px solid #912b88;
+}
+
+.status.backlog:before {
+  border: 6px solid #2e358b;
+}
+
+.grid-row.data-viz {
+  padding: 0 15px;
+}
+
+.data {
+  padding-top: 20px;
+  margin: 40px 0 60px 0;
+}
+
+.data.live {
+  border-top: 15px solid #85994b;
+}
+
+.data.beta {
+  border-top: 15px solid #f47738;
+}
+
+.data.alpha {
+  border-top: 15px solid #d53880;
+}
+
+.data.discovery {
+  border-top: 15px solid #912b88;
+}
+
+.data.backlog {
+  border-top: 15px solid #2e358b;
+}
+
+.data details {
+  font-size: 16px;
+}
+
+@media (min-width: 641px) {
+  .column-one-fifth {
+    float: left;
+    width: 17.6%;
+    margin-right: 3%;
+  }
+  .column-one-fifth:last-child {
+    margin-right: 0;
+  }
 }
